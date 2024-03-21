@@ -11,10 +11,58 @@
     <title>detalleCursos</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/DetalleCursosSheet.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="left-container">
+        <!-- Logo here -->
+        <img src="ulacitlogo.png" class="img-fluid mb-5" alt="ULACIT LOGO">
+        <!-- Buttons on the left side -->
+        <a href="Perfil.html" class="btn btn-secondary btn-block">
+            <i class="fa fa-user"></i>
+            Perfil de Usuario
+        </a>
+        <a href="CursosEstudiante.html" class="btn btn-secondary btn-block">
+            <i class="fas fa-book"></i>
+            Cursos
+        </a>
+        <button class="btn btn-dark btn-block" onclick="logout()">
+            <i class="fas fa-sign-out-alt"></i>
+            Sign Out
+        </button>
+    </div>
 
+        <!-- Central Container -->
+        <div class="col-md-9 central-container">
+          <div class="card">
+              <div class="card-section">
+                  <h1>Titulo Clase</h1>
+                  <div class="course-faculty">
+                      <img class="instructor-image" src="animadoprofe.jpg" alt="Instructor's Placeholder Image">
+                      <div class="instructor-info">
+                          <p class="instructor-name">Nombre Profesor</p>
+                          <p class="instructor-role">INSTRUCTOR</p>
+                      </div>
+                  </div>
+  
+                  <div class="content-grid">
+                      <div class="content-block">
+                          <h3 class="section-title">Course Information</h3>
+                          <p>Información del curso</p>
+                      </div>
+                      <div class="content-block">
+                          <h3 class="section-title">Herramientas</h3>
+                          <button class="btn btn-primary">Grades</button>
+                          <button class="btn btn-primary">Groups</button>
+                          <button class="btn btn-primary">Assistance</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
 </body>
 </html>
